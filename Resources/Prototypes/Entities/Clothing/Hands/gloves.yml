@@ -409,3 +409,24 @@
     fiberMaterial: fibers-rubber
     fiberColor: fibers-yellow
   - type: FingerprintMask
+
+ # same sprite as latex gloves, as they are just a powdered version
+- type: entity
+  parent: ClothingHandsButcherable
+  id: ClothingHandsGlovesSlap
+  name: slapping gloves
+  description: Powdered latex gloves fit for slapping and showing a disruptive clown what for!
+  components:
+  - type: Sprite
+    sprite: Clothing/Hands/Gloves/latex.rsi
+  - type: Clothing
+    sprite: Clothing/Hands/Gloves/latex.rsi
+  - type: Fiber
+    fiberMaterial: fibers-powdery
+  - type: FingerprintMask
+  - type: MeleeWeapon
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 0.2
+    soundHit: Resources\Audio\Weapons\Slap.ogg
