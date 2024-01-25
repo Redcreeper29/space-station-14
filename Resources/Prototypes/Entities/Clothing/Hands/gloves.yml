@@ -429,4 +429,4 @@
     damage:
       types:
         Blunt: 0.2
-    soundHit: Resources\Audio\Weapons\Slap.ogg
+    soundHit: slap.ogg
